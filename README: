@@ -22,7 +22,8 @@ Copy code
 path_to_pdf = '/content/drive/My Drive/<Your Directory>/<Your PDF File>.pdf'
 path_to_output = '/content/drive/My Drive/<Your Directory>/compressed_dataset.txt'
 For a local setup, use the following format:
-
+License
+This project is licensed under the terms of the MIT license.
 python
 Copy code
 path_to_pdf = "<Your Directory>/<Your PDF File>.pdf"
