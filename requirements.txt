@@ -1,0 +1,8 @@
+pytesseract
+Pillow
+PyPDF2~=3.0.1
+
+
+
+nltk~=3.8.1
+typing~=3.7.4.3

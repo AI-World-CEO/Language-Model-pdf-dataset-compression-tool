@@ -1,0 +1,19 @@
+import os
+
+
+def create_source_folders():
+    compression_scripts_path = 'src/compression'
+    preprocessing_scripts_path = 'src/preprocessing'
+
+    # Check if the directories already exist
+    # If not, create the directories
+    for folder_path in [compression_scripts_path, preprocessing_scripts_path]:
+        if not os.path.exists(folder_path):
+            os.makedirs(folder_path)
+            print(f"'{folder_path}' directory created.")
+        else:
+            print(f"'{folder_path}' directory already exists.")
+
+
+if __name__ == "__main__":
+    create_source_folders()

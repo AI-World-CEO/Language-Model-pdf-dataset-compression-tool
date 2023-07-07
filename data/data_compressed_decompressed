@@ -1,0 +1,19 @@
+import os
+
+
+def create_data_folders():
+    compressed_data_path = 'data/compressed'
+    decompressed_data_path = 'data/decompressed'
+
+    # Check if the directories already exist
+    # If not, create the directories
+    for folder_path in [compressed_data_path, decompressed_data_path]:
+        if not os.path.exists(folder_path):
+            os.makedirs(folder_path)
+            print(f"'{folder_path}' directory created.")
+        else:
+            print(f"'{folder_path}' directory already exists.")
+
+
+if __name__ == "__main__":
+    create_data_folders()
