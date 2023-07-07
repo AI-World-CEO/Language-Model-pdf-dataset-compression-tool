@@ -1,10 +1,19 @@
 # main.py
 import os
 from src.pipeline import Pipeline
+from utilities import create_directories
 
 
 def main(pdf_path: str, output_path: str):
     print("Initializing pipeline...")
+
+    # Create the necessary directories before running the pipeline
+    directories = ['data/compressed', 'data/decompressed', 'data/raw',
+                   'src/compression', 'src/preprocessing',
+                   'src/evaluation', 'models', 'results',
+                   'src/model', 'src/training']
+    create_directories(directories)
+
     pipeline = Pipeline()
     print("Running pipeline...")
     result = pipeline.run_pipeline(pdf_path)
@@ -34,4 +43,3 @@ if __name__ == "__main__":
         path_to_output = "<Your Directory>/compressed_dataset.txt"
 
     main(path_to_pdf, path_to_output)
-    # No extra blank line at the end of the file
