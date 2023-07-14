@@ -19,9 +19,11 @@ If you're using Google Colab, replace the paths in the following format:
 
 python
 Copy code
-path_to_pdf = '/content/drive/My Drive/<Your Directory>/<Your PDF File>.pdf'
-path_to_output = '/content/drive/My Drive/<Your Directory>/compressed_dataset.txt'
-For a local setup, use the following format:
+At the bottom of the main.py code block replace the code with your PDF and location you want it to print out make sure there are two \\ whereever you see one
+Example:if __name__ == "__main__":
+    main("C:\\Users\\John Doe\\desktop\\sim2940_technical.pdf",  Replace entire code including ""
+         "C:\\output\\compressed_dataset.txt")
+
 License
 This project is licensed under the terms of the MIT license.
 python
