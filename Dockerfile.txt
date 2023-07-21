@@ -1,0 +1,20 @@
+# Start from a base Python 3.11 image
+FROM python:3.11
+
+# Set a working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    libssl-dev \
+    libffi-dev \
+    # add other system dependencies as needed
+
+# Copy the rest of the code
+COPY . .
+
+# Manually install the requirements
+RUN pip install pytesseract Pillow==10.0.0 PyPDF2~=3.0.1 nltk~=3.8.1 scikit-learn~=1.3.0
+
+# Run the command to start your application
+CMD ['python', 'main.py']
