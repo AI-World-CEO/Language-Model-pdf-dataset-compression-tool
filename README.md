@@ -6,8 +6,7 @@ Welcome to AIdatasetCompress, an efficient tool to convert PDF files into compre
 
 Features 
 
-This new version completely takes the pdf and organizes it all the way to tokenized format in 3 pkl files such as Train.pkl test.pkl and val.pkl for testing and training ready for insertion into your language model 
-
+This new version completely takes the pdf and organizes it all the way to tokenized format in 3 pkl files such as Train.pkl test.pkl and val.pkl for testing and training ready for all three phases of your model
 PDF Processing: The tool can process PDFs and extract text data for dataset generation. 
 
 Text Processing: Advanced text processing using NLTK, which includes tokenization, lemmatization, and removal of stop words and punctuation. 
